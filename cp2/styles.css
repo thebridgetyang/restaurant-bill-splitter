@@ -1,0 +1,84 @@
+/* 
+  Name: Bridget Yang
+  CS 132 Spring 2023
+  Date: April 13, 2023
+
+  This is the styles.css page for my restaurant bill splitting calculator website.
+  The design is simple, clean, and consistent.
+*/
+
+body {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+body, input[type=submit] {
+  font-family: 'Comfortaa', cursive;
+}
+
+.num-input, #state-dropdown-menu, .item-input {
+  width: 200px;
+}
+
+.num-input, #state-dropdown-menu, .item-input, 
+#num-dishes {
+  height: 25px;
+  font-size: 16px;
+}
+
+#num-dishes {
+  width: 50px;
+}
+
+#tip, #item-input-field {
+  display: flex;
+}
+
+#tip {
+  justify-content: center;
+}
+
+#item-input-field {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, .item-input, input[type=submit] {
+  margin: 30px;
+}
+
+input[type=submit] {
+  width: 140px;
+  font-size: 18px;
+  color: white;
+  /* Inspired by: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+  background: linear-gradient(90deg,#e66465,#9198e5);
+  border: none;
+  padding: 13px;
+  border-radius: 30px;
+}
+
+input[type=submit]:hover {
+  background: linear-gradient(90deg,#42d1f5,#9198e5);
+}
+
+#tip > p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.calc-output {
+  font-weight: bold;
+  margin: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
